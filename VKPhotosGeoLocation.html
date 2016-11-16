@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="initial-scale=1.0, user-scalable=no">
+    <meta charset="utf-8">
+    <title>VKPhotosGeoLocation</title>
+    <style>
+      html, body {
+        height: 100%;
+        margin: 0;
+        padding: 0;
+      }
+      #map {
+        height: 100%;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="map"></div>
+    <script>
+
+function initMap() {
+  
+  var myLatLng = {lat: 47.14, lng: 39.42};
+
+ 
+  var map = new google.maps.Map(document.getElementById('map'), {
+    zoom: 4,
+    center: myLatLng
+  });
+
+  new google.maps.Marker({ position: {lat: 47.905063, lng: 38.75608}, map: map });
+new google.maps.Marker({ position: {lat: 44.637006, lng: 34.394969}, map: map });
+new google.maps.Marker({ position: {lat: 48.045585, lng: 38.762699}, map: map });
+new google.maps.Marker({ position: {lat: 48.044912, lng: 38.77135}, map: map });
+new google.maps.Marker({ position: {lat: 55.748073, lng: 37.542453}, map: map });
+new google.maps.Marker({ position: {lat: 48.060744, lng: 37.72507}, map: map });
+new google.maps.Marker({ position: {lat: 50.230084, lng: 12.873107}, map: map });
+  
+}
+
+    </script>
+    <AIzaSyD_Dkgym7A4PtyjM5qXeXOTYBpWeQ8fNTM>
+    <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD_Dkgym7A4PtyjM5qXeXOTYBpWeQ8fNTM&signed_in=true&callback=initMap"></script>
+  </body>
+</html>
